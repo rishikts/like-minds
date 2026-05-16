@@ -57,6 +57,7 @@
 		B1000000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10000000000000000000001 /* LikeMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20000000000000000002C /* LikeMinds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LikeMinds.entitlements; sourceTree = "<group>"; };
+		B20000000000000000002D /* LikeMinds-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LikeMinds-Debug.entitlements"; sourceTree = "<group>"; };
 		B10000000000000000000001 /* LikeMindsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeMindsApp.swift; sourceTree = "<group>"; };
 		B20000000000000000002B /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		B10000000000000000000002 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 			children = (
 				B1000000000000000000000C /* Assets.xcassets */,
 				B20000000000000000002C /* LikeMinds.entitlements */,
+				B20000000000000000002D /* LikeMinds-Debug.entitlements */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -465,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Resources/LikeMinds.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/LikeMinds-Debug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BMFYMMAVQW;

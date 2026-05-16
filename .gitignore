@@ -17,6 +17,8 @@ xcuserdata/
 .build/
 .swiftpm/
 Package.resolved
+# Keep Xcode workspace lockfile for reproducible SPM resolves
+!LikeMinds/LikeMinds.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 
 # CocoaPods
 Pods/
