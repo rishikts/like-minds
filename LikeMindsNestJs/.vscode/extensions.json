@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "prisma.prisma",
+    "mongodb.mongodb-vscode",
+    "visualstudioexptteam.vscodeintellicode",
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-vscode.makefile-tools",
+    "eamodio.gitlens",
+    "ms-azuretools.vscode-docker"
+  ]
+}
