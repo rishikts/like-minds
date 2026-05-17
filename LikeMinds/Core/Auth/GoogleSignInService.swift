@@ -27,6 +27,8 @@ final class GoogleSignInService: AuthSigning, @unchecked Sendable {
     #if canImport(GoogleSignIn)
     @MainActor
     private func signInWithSDK() async throws -> AuthUser {
+        try GoogleSignInConfiguration.configureOrThrow()
+
         guard let presenting = Self.topViewController() else {
             throw AuthError.providerUnavailable(.google)
         }

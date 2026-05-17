@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1000000000000000000000C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* Assets.xcassets */; };
-		A2000000000000000000FF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = P200000000000000000002 /* GoogleSignIn */; };
 		A10000000000000000000001 /* LikeMindsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* LikeMindsApp.swift */; };
-		A20000000000000000002B /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000002B /* AppRootView.swift */; };
 		A10000000000000000000002 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* Colors.swift */; };
 		A10000000000000000000003 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* Typography.swift */; };
 		A10000000000000000000004 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* Layout.swift */; };
@@ -19,23 +16,9 @@
 		A10000000000000000000007 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* GlassCard.swift */; };
 		A10000000000000000000008 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* PrimaryButton.swift */; };
 		A10000000000000000000009 /* ConnectionHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* ConnectionHub.swift */; };
-		A20000000000000000001C /* AuthProviderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001C /* AuthProviderButton.swift */; };
-		A20000000000000000001D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001D /* SecondaryButton.swift */; };
-		A20000000000000000001E /* OnboardingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001E /* OnboardingProgressBar.swift */; };
-		A20000000000000000001F /* SelectableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001F /* SelectableChip.swift */; };
-		A200000000000000000020 /* OnboardingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000020 /* OnboardingTextField.swift */; };
-		A200000000000000000021 /* OnboardingCardOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000021 /* OnboardingCardOption.swift */; };
-		A200000000000000000022 /* OnboardingMultilineField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000022 /* OnboardingMultilineField.swift */; };
-		A200000000000000000023 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000023 /* ErrorBanner.swift */; };
-		A200000000000000000024 /* OnboardingStepHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000024 /* OnboardingStepHeader.swift */; };
 		A1000000000000000000000A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000A /* WelcomeView.swift */; };
 		A1000000000000000000000B /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000B /* WelcomeViewModel.swift */; };
-		A200000000000000000025 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000025 /* AuthViewModel.swift */; };
-		A200000000000000000026 /* AuthSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000026 /* AuthSheetView.swift */; };
-		A200000000000000000027 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000027 /* OnboardingViewModel.swift */; };
-		A200000000000000000028 /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000028 /* OnboardingContainerView.swift */; };
-		A200000000000000000029 /* OnboardingStepContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000029 /* OnboardingStepContent.swift */; };
-		A20000000000000000002A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000002A /* HomeView.swift */; };
+		A1000000000000000000000C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* Assets.xcassets */; };
 		A20000000000000000000D /* AuthProviderKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000D /* AuthProviderKind.swift */; };
 		A20000000000000000000E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000E /* AuthUser.swift */; };
 		A20000000000000000000F /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000F /* UserSession.swift */; };
@@ -51,6 +34,22 @@
 		A200000000000000000019 /* GuestSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000019 /* GuestSignInService.swift */; };
 		A20000000000000000001A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001A /* AuthenticationService.swift */; };
 		A20000000000000000001B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001B /* AuthManager.swift */; };
+		A20000000000000000001C /* AuthProviderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001C /* AuthProviderButton.swift */; };
+		A20000000000000000001D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001D /* SecondaryButton.swift */; };
+		A20000000000000000001E /* OnboardingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001E /* OnboardingProgressBar.swift */; };
+		A20000000000000000001F /* SelectableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001F /* SelectableChip.swift */; };
+		A200000000000000000020 /* OnboardingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000020 /* OnboardingTextField.swift */; };
+		A200000000000000000021 /* OnboardingCardOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000021 /* OnboardingCardOption.swift */; };
+		A200000000000000000022 /* OnboardingMultilineField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000022 /* OnboardingMultilineField.swift */; };
+		A200000000000000000023 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000023 /* ErrorBanner.swift */; };
+		A200000000000000000024 /* OnboardingStepHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000024 /* OnboardingStepHeader.swift */; };
+		A200000000000000000025 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000025 /* AuthViewModel.swift */; };
+		A200000000000000000026 /* AuthSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000026 /* AuthSheetView.swift */; };
+		A200000000000000000027 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000027 /* OnboardingViewModel.swift */; };
+		A200000000000000000028 /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000028 /* OnboardingContainerView.swift */; };
+		A200000000000000000029 /* OnboardingStepContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000029 /* OnboardingStepContent.swift */; };
+		A20000000000000000002A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000002A /* HomeView.swift */; };
+		A20000000000000000002B /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000002B /* AppRootView.swift */; };
 		A200000000000000000030 /* GoogleOAuthScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000030 /* GoogleOAuthScopes.swift */; };
 		A200000000000000000031 /* GooglePeopleProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000031 /* GooglePeopleProfileService.swift */; };
 		A200000000000000000032 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000032 /* AppSecrets.swift */; };
@@ -58,15 +57,12 @@
 		A200000000000000000034 /* EmailSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000034 /* EmailSending.swift */; };
 		A200000000000000000035 /* ResendEmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000035 /* ResendEmailService.swift */; };
 		A200000000000000000036 /* WelcomeEmailNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000036 /* WelcomeEmailNotifier.swift */; };
+		A200000000000000000037 /* GoogleSignInConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000037 /* GoogleSignInConfiguration.swift */; };
+		A2000000000000000000FF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = P200000000000000000002 /* GoogleSignIn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B1000000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C10000000000000000000001 /* LikeMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B20000000000000000002C /* LikeMinds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LikeMinds.entitlements; sourceTree = "<group>"; };
-		B20000000000000000002D /* LikeMinds-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LikeMinds-Debug.entitlements"; sourceTree = "<group>"; };
 		B10000000000000000000001 /* LikeMindsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeMindsApp.swift; sourceTree = "<group>"; };
-		B20000000000000000002B /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		B10000000000000000000002 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B10000000000000000000003 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		B10000000000000000000004 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
@@ -75,23 +71,9 @@
 		B10000000000000000000007 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
 		B10000000000000000000008 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		B10000000000000000000009 /* ConnectionHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionHub.swift; sourceTree = "<group>"; };
-		B20000000000000000001C /* AuthProviderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderButton.swift; sourceTree = "<group>"; };
-		B20000000000000000001D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
-		B20000000000000000001E /* OnboardingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProgressBar.swift; sourceTree = "<group>"; };
-		B20000000000000000001F /* SelectableChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChip.swift; sourceTree = "<group>"; };
-		B200000000000000000020 /* OnboardingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTextField.swift; sourceTree = "<group>"; };
-		B200000000000000000021 /* OnboardingCardOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardOption.swift; sourceTree = "<group>"; };
-		B200000000000000000022 /* OnboardingMultilineField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMultilineField.swift; sourceTree = "<group>"; };
-		B200000000000000000023 /* ErrorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
-		B200000000000000000024 /* OnboardingStepHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepHeader.swift; sourceTree = "<group>"; };
 		B1000000000000000000000A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B1000000000000000000000B /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
-		B200000000000000000025 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		B200000000000000000026 /* AuthSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSheetView.swift; sourceTree = "<group>"; };
-		B200000000000000000027 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		B200000000000000000028 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
-		B200000000000000000029 /* OnboardingStepContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepContent.swift; sourceTree = "<group>"; };
-		B20000000000000000002A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B1000000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20000000000000000000D /* AuthProviderKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderKind.swift; sourceTree = "<group>"; };
 		B20000000000000000000E /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
 		B20000000000000000000F /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
@@ -107,6 +89,24 @@
 		B200000000000000000019 /* GuestSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSignInService.swift; sourceTree = "<group>"; };
 		B20000000000000000001A /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		B20000000000000000001B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B20000000000000000001C /* AuthProviderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderButton.swift; sourceTree = "<group>"; };
+		B20000000000000000001D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		B20000000000000000001E /* OnboardingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProgressBar.swift; sourceTree = "<group>"; };
+		B20000000000000000001F /* SelectableChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChip.swift; sourceTree = "<group>"; };
+		B200000000000000000020 /* OnboardingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTextField.swift; sourceTree = "<group>"; };
+		B200000000000000000021 /* OnboardingCardOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardOption.swift; sourceTree = "<group>"; };
+		B200000000000000000022 /* OnboardingMultilineField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMultilineField.swift; sourceTree = "<group>"; };
+		B200000000000000000023 /* ErrorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
+		B200000000000000000024 /* OnboardingStepHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepHeader.swift; sourceTree = "<group>"; };
+		B200000000000000000025 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000026 /* AuthSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSheetView.swift; sourceTree = "<group>"; };
+		B200000000000000000027 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000028 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		B200000000000000000029 /* OnboardingStepContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepContent.swift; sourceTree = "<group>"; };
+		B20000000000000000002A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B20000000000000000002B /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		B20000000000000000002C /* LikeMinds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LikeMinds.entitlements; sourceTree = "<group>"; };
+		B20000000000000000002D /* LikeMinds-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LikeMinds-Debug.entitlements"; sourceTree = "<group>"; };
 		B200000000000000000030 /* GoogleOAuthScopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuthScopes.swift; sourceTree = "<group>"; };
 		B200000000000000000031 /* GooglePeopleProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePeopleProfileService.swift; sourceTree = "<group>"; };
 		B200000000000000000032 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
@@ -114,6 +114,11 @@
 		B200000000000000000034 /* EmailSending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSending.swift; sourceTree = "<group>"; };
 		B200000000000000000035 /* ResendEmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendEmailService.swift; sourceTree = "<group>"; };
 		B200000000000000000036 /* WelcomeEmailNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeEmailNotifier.swift; sourceTree = "<group>"; };
+		B200000000000000000037 /* GoogleSignInConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInConfiguration.swift; sourceTree = "<group>"; };
+		B200000000000000000038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		H200000000000000000001 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		H200000000000000000002 /* GoogleOAuth.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GoogleOAuth.xcconfig.example; sourceTree = "<group>"; };
+		C10000000000000000000001 /* LikeMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +138,7 @@
 			children = (
 				E10000000000000000000009 /* App */,
 				E200000000000000000001 /* Core */,
+				H200000000000000000003 /* Config */,
 				E10000000000000000000006 /* Features */,
 				E1000000000000000000000A /* Shared */,
 				E10000000000000000000007 /* Resources */,
@@ -163,17 +169,27 @@
 			isa = PBXGroup;
 			children = (
 				B1000000000000000000000C /* Assets.xcassets */,
+				B200000000000000000038 /* Info.plist */,
 				B20000000000000000002C /* LikeMinds.entitlements */,
 				B20000000000000000002D /* LikeMinds-Debug.entitlements */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		H200000000000000000003 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				H200000000000000000001 /* Config.xcconfig */,
+				H200000000000000000002 /* GoogleOAuth.xcconfig.example */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		E10000000000000000000008 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				B1000000000000000000000A,
-				B1000000000000000000000B,
+				B1000000000000000000000A /* WelcomeView.swift */,
+				B1000000000000000000000B /* WelcomeViewModel.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -181,8 +197,8 @@
 		E10000000000000000000009 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				B10000000000000000000001,
-				B20000000000000000002B,
+				B10000000000000000000001 /* LikeMindsApp.swift */,
+				B20000000000000000002B /* AppRootView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -199,9 +215,9 @@
 		E1000000000000000000000B /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				B10000000000000000000002,
-				B10000000000000000000003,
-				B10000000000000000000004,
+				B10000000000000000000002 /* Colors.swift */,
+				B10000000000000000000003 /* Typography.swift */,
+				B10000000000000000000004 /* Layout.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -209,20 +225,20 @@
 		E1000000000000000000000C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B10000000000000000000005,
-				B10000000000000000000006,
-				B10000000000000000000007,
-				B10000000000000000000008,
-				B10000000000000000000009,
-				B20000000000000000001C,
-				B20000000000000000001D,
-				B20000000000000000001E,
-				B20000000000000000001F,
-				B200000000000000000020,
-				B200000000000000000021,
-				B200000000000000000022,
-				B200000000000000000023,
-				B200000000000000000024,
+				B10000000000000000000005 /* GradientBackground.swift */,
+				B10000000000000000000006 /* FloatingOrbs.swift */,
+				B10000000000000000000007 /* GlassCard.swift */,
+				B10000000000000000000008 /* PrimaryButton.swift */,
+				B10000000000000000000009 /* ConnectionHub.swift */,
+				B20000000000000000001C /* AuthProviderButton.swift */,
+				B20000000000000000001D /* SecondaryButton.swift */,
+				B20000000000000000001E /* OnboardingProgressBar.swift */,
+				B20000000000000000001F /* SelectableChip.swift */,
+				B200000000000000000020 /* OnboardingTextField.swift */,
+				B200000000000000000021 /* OnboardingCardOption.swift */,
+				B200000000000000000022 /* OnboardingMultilineField.swift */,
+				B200000000000000000023 /* ErrorBanner.swift */,
+				B200000000000000000024 /* OnboardingStepHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -241,13 +257,13 @@
 		E200000000000000000010 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B20000000000000000000D,
-				B20000000000000000000E,
-				B20000000000000000000F,
-				B200000000000000000010,
-				B200000000000000000011,
-				B200000000000000000012,
-				B200000000000000000013,
+				B20000000000000000000D /* AuthProviderKind.swift */,
+				B20000000000000000000E /* AuthUser.swift */,
+				B20000000000000000000F /* UserSession.swift */,
+				B200000000000000000010 /* SocialComfortLevel.swift */,
+				B200000000000000000011 /* InterestCatalog.swift */,
+				B200000000000000000012 /* OnboardingProfile.swift */,
+				B200000000000000000013 /* OnboardingStep.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,7 +271,7 @@
 		E200000000000000000011 /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				B200000000000000000014,
+				B200000000000000000014 /* SessionStore.swift */,
 			);
 			path = Session;
 			sourceTree = "<group>";
@@ -263,24 +279,37 @@
 		E200000000000000000012 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				B200000000000000000015,
-				B200000000000000000016,
-				B200000000000000000017,
-				B200000000000000000018,
-				B200000000000000000019,
-				B20000000000000000001A,
-				B20000000000000000001B,
-				B200000000000000000030,
-				B200000000000000000031,
+				B200000000000000000015 /* AuthError.swift */,
+				B200000000000000000016 /* AuthSigning.swift */,
+				B200000000000000000017 /* AppleSignInService.swift */,
+				B200000000000000000018 /* GoogleSignInService.swift */,
+				B200000000000000000019 /* GuestSignInService.swift */,
+				B20000000000000000001A /* AuthenticationService.swift */,
+				B20000000000000000001B /* AuthManager.swift */,
+				B200000000000000000030 /* GoogleOAuthScopes.swift */,
+				B200000000000000000031 /* GooglePeopleProfileService.swift */,
+				B200000000000000000037 /* GoogleSignInConfiguration.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		E200000000000000000015 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000032 /* AppSecrets.swift */,
+				B200000000000000000033 /* EmailTemplates.swift */,
+				B200000000000000000034 /* EmailSending.swift */,
+				B200000000000000000035 /* ResendEmailService.swift */,
+				B200000000000000000036 /* WelcomeEmailNotifier.swift */,
+			);
+			path = Email;
 			sourceTree = "<group>";
 		};
 		E200000000000000000021 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				B200000000000000000025,
-				B200000000000000000026,
+				B200000000000000000025 /* AuthViewModel.swift */,
+				B200000000000000000026 /* AuthSheetView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -288,8 +317,8 @@
 		E200000000000000000022 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				B200000000000000000027,
-				B200000000000000000028,
+				B200000000000000000027 /* OnboardingViewModel.swift */,
+				B200000000000000000028 /* OnboardingContainerView.swift */,
 				E200000000000000000023 /* Steps */,
 			);
 			path = Onboarding;
@@ -298,7 +327,7 @@
 		E200000000000000000023 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
-				B200000000000000000029,
+				B200000000000000000029 /* OnboardingStepContent.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -306,21 +335,9 @@
 		E200000000000000000024 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B20000000000000000002A,
+				B20000000000000000002A /* HomeView.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		E200000000000000000015 /* Email */ = {
-			isa = PBXGroup;
-			children = (
-				B200000000000000000032,
-				B200000000000000000033,
-				B200000000000000000034,
-				B200000000000000000035,
-				B200000000000000000036,
-			);
-			path = Email;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,7 +371,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					F10000000000000000000001 = {
 						CreatedOnToolsVersion = 16.0;
@@ -442,6 +459,7 @@
 				A20000000000000000001B /* AuthManager.swift in Sources */,
 				A200000000000000000030 /* GoogleOAuthScopes.swift in Sources */,
 				A200000000000000000031 /* GooglePeopleProfileService.swift in Sources */,
+				A200000000000000000037 /* GoogleSignInConfiguration.swift in Sources */,
 				A200000000000000000032 /* AppSecrets.swift in Sources */,
 				A200000000000000000033 /* EmailTemplates.swift in Sources */,
 				A200000000000000000034 /* EmailSending.swift in Sources */,
@@ -455,25 +473,54 @@
 /* Begin XCBuildConfiguration section */
 		G10000000000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = H200000000000000000001 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BMFYMMAVQW;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -481,18 +528,47 @@
 		};
 		G10000000000000000000002 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = H200000000000000000001 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BMFYMMAVQW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -503,16 +579,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Resources/LikeMinds-Debug.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Resources/LikeMinds-Debug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BMFYMMAVQW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LikeMinds;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_EMAIL_FROM_ADDRESS = "noreply@liveminds.com";
 				INFOPLIST_KEY_EMAIL_FROM_NAME = "Like Minds";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo so friends can recognize you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -540,13 +616,13 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/LikeMinds.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BMFYMMAVQW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LikeMinds;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_EMAIL_FROM_ADDRESS = "noreply@liveminds.com";
 				INFOPLIST_KEY_EMAIL_FROM_NAME = "Like Minds";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo so friends can recognize you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

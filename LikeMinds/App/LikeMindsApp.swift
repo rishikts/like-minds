@@ -7,7 +7,7 @@ import GoogleSignIn
 @main
 struct LikeMindsApp: App {
     init() {
-        configureGoogleSignInIfAvailable()
+        _ = GoogleSignInConfiguration.configure()
     }
 
     var body: some Scene {
@@ -15,15 +15,6 @@ struct LikeMindsApp: App {
             AppRootView()
                 .onOpenURL(perform: handleIncomingURL)
         }
-    }
-
-    private func configureGoogleSignInIfAvailable() {
-        #if canImport(GoogleSignIn)
-        guard let clientID = Bundle.main.object(forInfoDictionaryKey: "GIDClientID") as? String else {
-            return
-        }
-        GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
-        #endif
     }
 
     private func handleIncomingURL(_ url: URL) {

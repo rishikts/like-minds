@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  SETUP:
+  1. Google Cloud Console → APIs & Services → Credentials → Create OAuth client ID (iOS)
+     Bundle ID: com.rishikts.likeminds
+  2. Download the real GoogleService-Info.plist from Firebase/Google, OR copy this file to
+     GoogleService-Info.plist and replace placeholder values below.
+  3. Add GoogleService-Info.plist to the LikeMinds target (ensure it appears in Copy Bundle Resources).
+  4. In Xcode → LikeMinds target → Info → URL Types → add URL Scheme = REVERSED_CLIENT_ID value below.
+-->
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>YOUR_IOS_CLIENT_ID.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.YOUR_NUMERIC_CLIENT_SUFFIX</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rishikts.likeminds</string>
+</dict>
+</plist>
