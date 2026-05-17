@@ -8,6 +8,12 @@ import GoogleSignIn
 final class GoogleSignInService: AuthSigning, @unchecked Sendable {
     let provider: AuthProviderKind = .google
 
+    private let peopleService: GooglePeopleProfileService
+
+    init(peopleService: GooglePeopleProfileService = GooglePeopleProfileService()) {
+        self.peopleService = peopleService
+    }
+
     func signIn() async throws -> AuthUser {
         #if canImport(GoogleSignIn)
         return try await signInWithSDK()
@@ -27,7 +33,11 @@ final class GoogleSignInService: AuthSigning, @unchecked Sendable {
 
         let result: GIDSignInResult
         do {
-            result = try await GIDSignIn.sharedInstance.signIn(withPresenting: presenting)
+            result = try await GIDSignIn.sharedInstance.signIn(
+                withPresenting: presenting,
+                hint: nil,
+                additionalScopes: GoogleOAuthScopes.signInAdditionalScopes
+            )
         } catch {
             if (error as NSError).code == GIDSignInError.canceled.rawValue {
                 throw AuthError.cancelled
@@ -36,10 +46,21 @@ final class GoogleSignInService: AuthSigning, @unchecked Sendable {
         }
 
         let profile = result.user.profile
+        let accessToken = result.user.accessToken.tokenString
+        let people = await peopleService.fetchProfile(accessToken: accessToken)
+
+        let firstName = profile?.givenName
+        let lastName = profile?.familyName
+        let displayName = profile?.name
+            ?? [firstName, lastName].compactMap { $0 }.joined(separator: " ")
+
         return AuthUser(
             id: result.user.userID ?? UUID().uuidString,
             email: profile?.email,
-            displayName: profile?.name,
+            firstName: firstName,
+            lastName: lastName,
+            phoneNumber: people.phoneNumber,
+            displayName: displayName.isEmpty ? nil : displayName,
             photoURL: profile?.imageURL(withDimension: 200)?.absoluteString,
             provider: .google
         )

@@ -1,6 +1,10 @@
 import Foundation
 import SwiftUI
 
+#if canImport(GoogleSignIn)
+import GoogleSignIn
+#endif
+
 enum AppRoute: Equatable {
     case launching
     case welcome
@@ -18,13 +22,16 @@ final class AuthManager: ObservableObject {
 
     private let authenticationService: AuthenticationServiceProtocol
     private let sessionStore: SessionStoring
+    private let welcomeEmailNotifier: WelcomeEmailNotifying
 
     init(
         authenticationService: AuthenticationServiceProtocol = AuthenticationService(),
-        sessionStore: SessionStoring = SessionStore()
+        sessionStore: SessionStoring = SessionStore(),
+        welcomeEmailNotifier: WelcomeEmailNotifying = WelcomeEmailNotifier()
     ) {
         self.authenticationService = authenticationService
         self.sessionStore = sessionStore
+        self.welcomeEmailNotifier = welcomeEmailNotifier
     }
 
     func bootstrap() {
@@ -54,9 +61,8 @@ final class AuthManager: ObservableObject {
         do {
             let user = try await authenticationService.signIn(with: provider)
             var profile = OnboardingProfile()
-            if let name = user.displayName, !name.isEmpty {
-                profile.fullName = name
-            }
+            applyUserToOnboardingProfile(user, profile: &profile)
+
             let newSession = UserSession(
                 user: user,
                 accessToken: provider == .guest ? nil : "local-\(UUID().uuidString)",
@@ -66,10 +72,27 @@ final class AuthManager: ObservableObject {
             try sessionStore.save(newSession)
             session = newSession
             route = .onboarding
+
+            if provider == .google {
+                Task {
+                    await welcomeEmailNotifier.sendSignInSuccessEmail(for: user)
+                }
+            }
         } catch let error as AuthError where error == .cancelled {
             return
         } catch {
             authErrorMessage = (error as? LocalizedError)?.errorDescription ?? error.localizedDescription
+        }
+    }
+
+    private func applyUserToOnboardingProfile(_ user: AuthUser, profile: inout OnboardingProfile) {
+        if !user.fullName.isEmpty {
+            profile.fullName = user.fullName
+        } else if let displayName = user.displayName, !displayName.isEmpty {
+            profile.fullName = displayName
+        }
+        if let phone = user.phoneNumber, !phone.isEmpty {
+            profile.phoneNumber = phone
         }
     }
 
@@ -92,6 +115,9 @@ final class AuthManager: ObservableObject {
     }
 
     func signOut() {
+        #if canImport(GoogleSignIn)
+        GIDSignIn.sharedInstance.signOut()
+        #endif
         try? sessionStore.clear()
         session = nil
         authErrorMessage = nil

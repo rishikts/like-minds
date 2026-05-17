@@ -51,6 +51,13 @@
 		A200000000000000000019 /* GuestSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000019 /* GuestSignInService.swift */; };
 		A20000000000000000001A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001A /* AuthenticationService.swift */; };
 		A20000000000000000001B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001B /* AuthManager.swift */; };
+		A200000000000000000030 /* GoogleOAuthScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000030 /* GoogleOAuthScopes.swift */; };
+		A200000000000000000031 /* GooglePeopleProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000031 /* GooglePeopleProfileService.swift */; };
+		A200000000000000000032 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000032 /* AppSecrets.swift */; };
+		A200000000000000000033 /* EmailTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000033 /* EmailTemplates.swift */; };
+		A200000000000000000034 /* EmailSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000034 /* EmailSending.swift */; };
+		A200000000000000000035 /* ResendEmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000035 /* ResendEmailService.swift */; };
+		A200000000000000000036 /* WelcomeEmailNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000036 /* WelcomeEmailNotifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +107,13 @@
 		B200000000000000000019 /* GuestSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSignInService.swift; sourceTree = "<group>"; };
 		B20000000000000000001A /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		B20000000000000000001B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B200000000000000000030 /* GoogleOAuthScopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuthScopes.swift; sourceTree = "<group>"; };
+		B200000000000000000031 /* GooglePeopleProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePeopleProfileService.swift; sourceTree = "<group>"; };
+		B200000000000000000032 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
+		B200000000000000000033 /* EmailTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTemplates.swift; sourceTree = "<group>"; };
+		B200000000000000000034 /* EmailSending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSending.swift; sourceTree = "<group>"; };
+		B200000000000000000035 /* ResendEmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendEmailService.swift; sourceTree = "<group>"; };
+		B200000000000000000036 /* WelcomeEmailNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeEmailNotifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +233,7 @@
 				E200000000000000000010 /* Models */,
 				E200000000000000000011 /* Session */,
 				E200000000000000000012 /* Auth */,
+				E200000000000000000015 /* Email */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -255,6 +270,8 @@
 				B200000000000000000019,
 				B20000000000000000001A,
 				B20000000000000000001B,
+				B200000000000000000030,
+				B200000000000000000031,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -292,6 +309,18 @@
 				B20000000000000000002A,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E200000000000000000015 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000032,
+				B200000000000000000033,
+				B200000000000000000034,
+				B200000000000000000035,
+				B200000000000000000036,
+			);
+			path = Email;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +440,13 @@
 				A200000000000000000019 /* GuestSignInService.swift in Sources */,
 				A20000000000000000001A /* AuthenticationService.swift in Sources */,
 				A20000000000000000001B /* AuthManager.swift in Sources */,
+				A200000000000000000030 /* GoogleOAuthScopes.swift in Sources */,
+				A200000000000000000031 /* GooglePeopleProfileService.swift in Sources */,
+				A200000000000000000032 /* AppSecrets.swift in Sources */,
+				A200000000000000000033 /* EmailTemplates.swift in Sources */,
+				A200000000000000000034 /* EmailSending.swift in Sources */,
+				A200000000000000000035 /* ResendEmailService.swift in Sources */,
+				A200000000000000000036 /* WelcomeEmailNotifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +511,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = LikeMinds;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_EMAIL_FROM_ADDRESS = "noreply@liveminds.com";
+				INFOPLIST_KEY_EMAIL_FROM_NAME = "Like Minds";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo so friends can recognize you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -507,6 +545,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = LikeMinds;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_EMAIL_FROM_ADDRESS = "noreply@liveminds.com";
+				INFOPLIST_KEY_EMAIL_FROM_NAME = "Like Minds";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo so friends can recognize you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

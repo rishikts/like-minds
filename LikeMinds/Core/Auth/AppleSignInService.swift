@@ -61,16 +61,17 @@ extension AppleSignInService: ASAuthorizationControllerDelegate {
             return
         }
 
-        let fullName = [
-            credential.fullName?.givenName,
-            credential.fullName?.familyName
-        ]
-        .compactMap { $0 }
-        .joined(separator: " ")
+        let givenName = credential.fullName?.givenName
+        let familyName = credential.fullName?.familyName
+        let fullName = [givenName, familyName]
+            .compactMap { $0 }
+            .joined(separator: " ")
 
         let user = AuthUser(
             id: credential.user,
             email: credential.email,
+            firstName: givenName,
+            lastName: familyName,
             displayName: fullName.isEmpty ? nil : fullName,
             photoURL: nil,
             provider: .apple

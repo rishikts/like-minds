@@ -13,6 +13,9 @@ xcuserdata/
 *.mode2v3
 *.perspectivev3
 
+# App secrets (copy Secrets.plist.example → Secrets.plist)
+LikeMinds/Resources/Secrets.plist
+
 # Swift Package Manager
 .build/
 .swiftpm/

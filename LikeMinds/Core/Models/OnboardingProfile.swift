@@ -2,6 +2,7 @@ import Foundation
 
 struct OnboardingProfile: Codable, Equatable, Sendable {
     var fullName: String = ""
+    var phoneNumber: String?
     var username: String = ""
     var profilePhotoData: Data?
     var dateOfBirth: Date?
