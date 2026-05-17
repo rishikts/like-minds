@@ -48,5 +48,15 @@ extension Theme {
                 endRadius: 220
             )
         }
+
+        static func named(_ key: String) -> Color? {
+            switch key {
+            case "violet": accentViolet
+            case "coral": accentCoral
+            case "cyan": accentCyan
+            case "gold": accentGold
+            default: nil
+            }
+        }
     }
 }

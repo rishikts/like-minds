@@ -154,15 +154,14 @@ struct OnboardingStepContent: View {
     }
 
     private var personalityStep: some View {
-        VStack(spacing: 12) {
+        FlowLayout(spacing: 10) {
             ForEach(personalityOptions, id: \.title) { option in
-                OnboardingCardOption(
+                SelectableChip(
                     title: option.title,
-                    subtitle: option.subtitle,
                     symbolName: option.symbol,
-                    isSelected: viewModel.profile.personalityType == option.title
+                    isSelected: viewModel.profile.personalityTypes.contains(option.title)
                 ) {
-                    viewModel.profile.personalityType = option.title
+                    viewModel.togglePersonalityVibe(option.title)
                 }
             }
         }

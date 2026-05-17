@@ -59,6 +59,41 @@
 		A200000000000000000036 /* WelcomeEmailNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000036 /* WelcomeEmailNotifier.swift */; };
 		A200000000000000000037 /* GoogleSignInConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000037 /* GoogleSignInConfiguration.swift */; };
 		A2000000000000000000FF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = P200000000000000000002 /* GoogleSignIn */; };
+		A200000000000000000040 /* LMCommunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000040 /* LMCommunity.swift */; };
+		A200000000000000000041 /* LMMeetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000041 /* LMMeetup.swift */; };
+		A200000000000000000042 /* LMDiscoverPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000042 /* LMDiscoverPerson.swift */; };
+		A200000000000000000043 /* LMFeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000043 /* LMFeedModels.swift */; };
+		A200000000000000000044 /* LMNotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000044 /* LMNotificationItem.swift */; };
+		A200000000000000000045 /* LMUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000045 /* LMUserProfile.swift */; };
+		A200000000000000000046 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000046 /* MockData.swift */; };
+		A200000000000000000047 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000047 /* SectionHeaderView.swift */; };
+		A200000000000000000048 /* VibeTagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000048 /* VibeTagRow.swift */; };
+		A200000000000000000049 /* CommunityCategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000049 /* CommunityCategoryCard.swift */; };
+		A20000000000000000004A /* MeetupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004A /* MeetupCard.swift */; };
+		A20000000000000000004B /* DiscoverPersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004B /* DiscoverPersonCard.swift */; };
+		A20000000000000000004C /* FeedRecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004C /* FeedRecommendationCard.swift */; };
+		A20000000000000000004D /* ActivityRowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004D /* ActivityRowCard.swift */; };
+		A20000000000000000004E /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004E /* NotificationRow.swift */; };
+		A20000000000000000004F /* ScreenShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004F /* ScreenShell.swift */; };
+		A200000000000000000050 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000050 /* MainTab.swift */; };
+		A200000000000000000051 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000051 /* MainTabBar.swift */; };
+		A200000000000000000052 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000052 /* MainTabView.swift */; };
+		A200000000000000000053 /* HomeFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000053 /* HomeFeedViewModel.swift */; };
+		A200000000000000000054 /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000054 /* HomeFeedView.swift */; };
+		A200000000000000000056 /* CommunitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000056 /* CommunitiesViewModel.swift */; };
+		A200000000000000000057 /* CommunitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000057 /* CommunitiesView.swift */; };
+		A200000000000000000058 /* CommunityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000058 /* CommunityDetailViewModel.swift */; };
+		A200000000000000000059 /* CommunityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000059 /* CommunityDetailView.swift */; };
+		A20000000000000000005A /* MeetupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005A /* MeetupsViewModel.swift */; };
+		A20000000000000000005B /* MeetupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005B /* MeetupsView.swift */; };
+		A20000000000000000005C /* DiscoverPeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005C /* DiscoverPeopleViewModel.swift */; };
+		A20000000000000000005D /* DiscoverPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005D /* DiscoverPeopleView.swift */; };
+		A20000000000000000005E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005E /* ProfileViewModel.swift */; };
+		A20000000000000000005F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005F /* ProfileView.swift */; };
+		A200000000000000000060 /* EditInterestsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000060 /* EditInterestsViewModel.swift */; };
+		A200000000000000000061 /* EditInterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000061 /* EditInterestsView.swift */; };
+		A200000000000000000062 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000062 /* NotificationsViewModel.swift */; };
+		A200000000000000000063 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000063 /* NotificationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +154,41 @@
 		H200000000000000000001 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		H200000000000000000002 /* GoogleOAuth.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GoogleOAuth.xcconfig.example; sourceTree = "<group>"; };
 		C10000000000000000000001 /* LikeMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200000000000000000040 /* LMCommunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMCommunity.swift; sourceTree = "<group>"; };
+		B200000000000000000041 /* LMMeetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMMeetup.swift; sourceTree = "<group>"; };
+		B200000000000000000042 /* LMDiscoverPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMDiscoverPerson.swift; sourceTree = "<group>"; };
+		B200000000000000000043 /* LMFeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMFeedModels.swift; sourceTree = "<group>"; };
+		B200000000000000000044 /* LMNotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMNotificationItem.swift; sourceTree = "<group>"; };
+		B200000000000000000045 /* LMUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMUserProfile.swift; sourceTree = "<group>"; };
+		B200000000000000000046 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B200000000000000000047 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		B200000000000000000048 /* VibeTagRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeTagRow.swift; sourceTree = "<group>"; };
+		B200000000000000000049 /* CommunityCategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCategoryCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004A /* MeetupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004B /* DiscoverPersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPersonCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004C /* FeedRecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRecommendationCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004D /* ActivityRowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRowCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004E /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
+		B20000000000000000004F /* ScreenShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShell.swift; sourceTree = "<group>"; };
+		B200000000000000000050 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		B200000000000000000051 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		B200000000000000000052 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B200000000000000000053 /* HomeFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000054 /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
+		B200000000000000000056 /* CommunitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000057 /* CommunitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesView.swift; sourceTree = "<group>"; };
+		B200000000000000000058 /* CommunityDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetailViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000059 /* CommunityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetailView.swift; sourceTree = "<group>"; };
+		B20000000000000000005A /* MeetupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000005B /* MeetupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsView.swift; sourceTree = "<group>"; };
+		B20000000000000000005C /* DiscoverPeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000005D /* DiscoverPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleView.swift; sourceTree = "<group>"; };
+		B20000000000000000005E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000005F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B200000000000000000060 /* EditInterestsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInterestsViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000061 /* EditInterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInterestsView.swift; sourceTree = "<group>"; };
+		B200000000000000000062 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000063 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +230,13 @@
 				E10000000000000000000008 /* Welcome */,
 				E200000000000000000021 /* Auth */,
 				E200000000000000000022 /* Onboarding */,
+				E200000000000000000070 /* Main */,
 				E200000000000000000024 /* Home */,
+				E200000000000000000071 /* Communities */,
+				E200000000000000000072 /* Meetups */,
+				E200000000000000000073 /* Discover */,
+				E200000000000000000074 /* Profile */,
+				E200000000000000000075 /* Notifications */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -207,6 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				E1000000000000000000000B /* Theme */,
+				E200000000000000000076 /* Models */,
+				E200000000000000000077 /* MockData */,
 				E1000000000000000000000C /* Components */,
 			);
 			path = Shared;
@@ -239,6 +317,7 @@
 				B200000000000000000022 /* OnboardingMultilineField.swift */,
 				B200000000000000000023 /* ErrorBanner.swift */,
 				B200000000000000000024 /* OnboardingStepHeader.swift */,
+				E200000000000000000078 /* Feed */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -336,8 +415,106 @@
 			isa = PBXGroup;
 			children = (
 				B20000000000000000002A /* HomeView.swift */,
+				B200000000000000000053 /* HomeFeedViewModel.swift */,
+				B200000000000000000054 /* HomeFeedView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		E200000000000000000070 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000050 /* MainTab.swift */,
+				B200000000000000000051 /* MainTabBar.swift */,
+				B200000000000000000052 /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E200000000000000000071 /* Communities */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000056 /* CommunitiesViewModel.swift */,
+				B200000000000000000057 /* CommunitiesView.swift */,
+				B200000000000000000058 /* CommunityDetailViewModel.swift */,
+				B200000000000000000059 /* CommunityDetailView.swift */,
+			);
+			path = Communities;
+			sourceTree = "<group>";
+		};
+		E200000000000000000072 /* Meetups */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000005A /* MeetupsViewModel.swift */,
+				B20000000000000000005B /* MeetupsView.swift */,
+			);
+			path = Meetups;
+			sourceTree = "<group>";
+		};
+		E200000000000000000073 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000005C /* DiscoverPeopleViewModel.swift */,
+				B20000000000000000005D /* DiscoverPeopleView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		E200000000000000000074 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000005E /* ProfileViewModel.swift */,
+				B20000000000000000005F /* ProfileView.swift */,
+				B200000000000000000060 /* EditInterestsViewModel.swift */,
+				B200000000000000000061 /* EditInterestsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E200000000000000000075 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000062 /* NotificationsViewModel.swift */,
+				B200000000000000000063 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		E200000000000000000076 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000040 /* LMCommunity.swift */,
+				B200000000000000000041 /* LMMeetup.swift */,
+				B200000000000000000042 /* LMDiscoverPerson.swift */,
+				B200000000000000000043 /* LMFeedModels.swift */,
+				B200000000000000000044 /* LMNotificationItem.swift */,
+				B200000000000000000045 /* LMUserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E200000000000000000077 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000046 /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		E200000000000000000078 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000047 /* SectionHeaderView.swift */,
+				B200000000000000000048 /* VibeTagRow.swift */,
+				B200000000000000000049 /* CommunityCategoryCard.swift */,
+				B20000000000000000004A /* MeetupCard.swift */,
+				B20000000000000000004B /* DiscoverPersonCard.swift */,
+				B20000000000000000004C /* FeedRecommendationCard.swift */,
+				B20000000000000000004D /* ActivityRowCard.swift */,
+				B20000000000000000004E /* NotificationRow.swift */,
+				B20000000000000000004F /* ScreenShell.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,6 +642,41 @@
 				A200000000000000000034 /* EmailSending.swift in Sources */,
 				A200000000000000000035 /* ResendEmailService.swift in Sources */,
 				A200000000000000000036 /* WelcomeEmailNotifier.swift in Sources */,
+				A200000000000000000040 /* LMCommunity.swift in Sources */,
+				A200000000000000000041 /* LMMeetup.swift in Sources */,
+				A200000000000000000042 /* LMDiscoverPerson.swift in Sources */,
+				A200000000000000000043 /* LMFeedModels.swift in Sources */,
+				A200000000000000000044 /* LMNotificationItem.swift in Sources */,
+				A200000000000000000045 /* LMUserProfile.swift in Sources */,
+				A200000000000000000046 /* MockData.swift in Sources */,
+				A200000000000000000047 /* SectionHeaderView.swift in Sources */,
+				A200000000000000000048 /* VibeTagRow.swift in Sources */,
+				A200000000000000000049 /* CommunityCategoryCard.swift in Sources */,
+				A20000000000000000004A /* MeetupCard.swift in Sources */,
+				A20000000000000000004B /* DiscoverPersonCard.swift in Sources */,
+				A20000000000000000004C /* FeedRecommendationCard.swift in Sources */,
+				A20000000000000000004D /* ActivityRowCard.swift in Sources */,
+				A20000000000000000004E /* NotificationRow.swift in Sources */,
+				A20000000000000000004F /* ScreenShell.swift in Sources */,
+				A200000000000000000050 /* MainTab.swift in Sources */,
+				A200000000000000000051 /* MainTabBar.swift in Sources */,
+				A200000000000000000052 /* MainTabView.swift in Sources */,
+				A200000000000000000053 /* HomeFeedViewModel.swift in Sources */,
+				A200000000000000000054 /* HomeFeedView.swift in Sources */,
+				A200000000000000000056 /* CommunitiesViewModel.swift in Sources */,
+				A200000000000000000057 /* CommunitiesView.swift in Sources */,
+				A200000000000000000058 /* CommunityDetailViewModel.swift in Sources */,
+				A200000000000000000059 /* CommunityDetailView.swift in Sources */,
+				A20000000000000000005A /* MeetupsViewModel.swift in Sources */,
+				A20000000000000000005B /* MeetupsView.swift in Sources */,
+				A20000000000000000005C /* DiscoverPeopleViewModel.swift in Sources */,
+				A20000000000000000005D /* DiscoverPeopleView.swift in Sources */,
+				A20000000000000000005E /* ProfileViewModel.swift in Sources */,
+				A20000000000000000005F /* ProfileView.swift in Sources */,
+				A200000000000000000060 /* EditInterestsViewModel.swift in Sources */,
+				A200000000000000000061 /* EditInterestsView.swift in Sources */,
+				A200000000000000000062 /* NotificationsViewModel.swift in Sources */,
+				A200000000000000000063 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

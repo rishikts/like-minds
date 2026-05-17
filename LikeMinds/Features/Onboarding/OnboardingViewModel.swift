@@ -38,7 +38,7 @@ final class OnboardingViewModel: ObservableObject {
         case .occupation:
             !profile.occupationStatus.isEmpty
         case .personality:
-            !profile.personalityType.isEmpty
+            !profile.personalityTypes.isEmpty
         case .socialComfort:
             profile.socialComfort != nil
         case .interests:
@@ -83,6 +83,14 @@ final class OnboardingViewModel: ObservableObject {
             profile.selectedInterestIDs.remove(id)
         } else {
             profile.selectedInterestIDs.insert(id)
+        }
+    }
+
+    func togglePersonalityVibe(_ title: String) {
+        if profile.personalityTypes.contains(title) {
+            profile.personalityTypes.remove(title)
+        } else {
+            profile.personalityTypes.insert(title)
         }
     }
 

@@ -43,7 +43,7 @@ enum OnboardingStep: Int, CaseIterable, Identifiable, Sendable {
         case .city: "We'll surface local people and events."
         case .occupation: "Student, builder, explorer — all welcome."
         case .bio: "A few lines about what matters to you."
-        case .personality: "Helps us match your energy."
+        case .personality: "Pick all vibes that feel like you — no limit."
         case .socialComfort: "No wrong answers — just be honest."
         case .interests: "Choose at least 3 — we'll personalize everything."
         case .hobbies: "The details that make you, you."
