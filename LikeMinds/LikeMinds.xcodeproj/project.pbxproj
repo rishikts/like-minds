@@ -94,6 +94,7 @@
 		A200000000000000000061 /* EditInterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000061 /* EditInterestsView.swift */; };
 		A200000000000000000062 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000062 /* NotificationsViewModel.swift */; };
 		A200000000000000000063 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000063 /* NotificationsView.swift */; };
+		A200000000000000000064 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000064 /* FlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +190,7 @@
 		B200000000000000000061 /* EditInterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInterestsView.swift; sourceTree = "<group>"; };
 		B200000000000000000062 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		B200000000000000000063 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		B200000000000000000064 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +319,7 @@
 				B200000000000000000022 /* OnboardingMultilineField.swift */,
 				B200000000000000000023 /* ErrorBanner.swift */,
 				B200000000000000000024 /* OnboardingStepHeader.swift */,
+				B200000000000000000064 /* FlowLayout.swift */,
 				E200000000000000000078 /* Feed */,
 			);
 			path = Components;
@@ -677,6 +680,7 @@
 				A200000000000000000061 /* EditInterestsView.swift in Sources */,
 				A200000000000000000062 /* NotificationsViewModel.swift in Sources */,
 				A200000000000000000063 /* NotificationsView.swift in Sources */,
+				A200000000000000000064 /* FlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

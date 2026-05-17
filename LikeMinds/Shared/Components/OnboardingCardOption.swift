@@ -27,10 +27,12 @@ struct OnboardingCardOption: View {
                     Text(title)
                         .font(Theme.Typography.title(17))
                         .foregroundStyle(Theme.Colors.textPrimary)
-                    Text(subtitle)
-                        .font(Theme.Typography.caption(13))
-                        .foregroundStyle(Theme.Colors.textSecondary)
-                        .fixedSize(horizontal: false, vertical: true)
+                    if !subtitle.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                        Text(subtitle)
+                            .font(Theme.Typography.caption(13))
+                            .foregroundStyle(Theme.Colors.textSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                 }
 
                 Spacer(minLength: 0)

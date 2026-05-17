@@ -64,17 +64,19 @@ struct ProfileView: View {
 
     private func statCard(value: String, label: String) -> some View {
         GlassCard(cornerRadius: 16) {
-            VStack(spacing: 4) {
+            VStack(spacing: 6) {
                 Text(value)
-                    .font(Theme.Typography.title(18))
+                    .font(Theme.Typography.title(16))
                     .foregroundStyle(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.75)
+                    .multilineTextAlignment(.center)
                 Text(label)
                     .font(Theme.Typography.caption(11))
                     .foregroundStyle(Theme.Colors.textTertiary)
             }
             .frame(maxWidth: .infinity)
+            .padding(.horizontal, 8)
             .padding(.vertical, 14)
         }
     }
@@ -84,63 +86,74 @@ struct ProfileView: View {
             Text(viewModel.profile.bio)
                 .font(Theme.Typography.body(15))
                 .foregroundStyle(Theme.Colors.textSecondary)
-                .lineSpacing(4)
+                .lineSpacing(5)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 
     private var vibesSection: some View {
         sectionBlock(title: "Your vibe") {
-            VibeTagRow(tags: viewModel.profile.vibeTags, limit: 6)
+            profileTagFlow(viewModel.profile.vibeTags)
         }
     }
 
     private var interestsSection: some View {
         sectionBlock(title: "Interests") {
-            FlowLayout(spacing: 8) {
-                ForEach(viewModel.profile.interests, id: \.self) { interest in
-                    Text(interest)
-                        .font(Theme.Typography.caption(13))
-                        .foregroundStyle(Theme.Colors.textSecondary)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 8)
-                        .background(Capsule().fill(Theme.Colors.glassFill))
-                }
-            }
+            profileTagFlow(viewModel.profile.interests)
         }
     }
 
     private var communitiesSection: some View {
         sectionBlock(title: "Favorite communities") {
-            ForEach(viewModel.profile.favoriteCommunities, id: \.self) { name in
-                Text(name)
-                    .font(Theme.Typography.caption(14))
-                    .foregroundStyle(Theme.Colors.textPrimary)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.vertical, 6)
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(viewModel.profile.favoriteCommunities, id: \.self) { name in
+                    Text(name)
+                        .font(Theme.Typography.caption(14))
+                        .foregroundStyle(Theme.Colors.textPrimary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
             }
         }
     }
 
     private var badgesSection: some View {
         sectionBlock(title: "Badges") {
-            HStack(spacing: 10) {
-                ForEach(viewModel.profile.badges, id: \.self) { badge in
-                    Text(badge)
-                        .font(Theme.Typography.caption(11))
-                        .foregroundStyle(Theme.Colors.accentGold)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 6)
-                        .background(Capsule().stroke(Theme.Colors.accentGold.opacity(0.5), lineWidth: 1))
-                }
-            }
+            profileTagFlow(viewModel.profile.badges, accent: true)
         }
     }
 
+    private func profileTagFlow(_ tags: [String], accent: Bool = false) -> some View {
+        FlowLayout(spacing: 10) {
+            ForEach(tags, id: \.self) { tag in
+                Text(tag)
+                    .font(Theme.Typography.caption(13))
+                    .foregroundStyle(accent ? Theme.Colors.accentGold : Theme.Colors.textSecondary)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 9)
+                    .background {
+                        Capsule(style: .continuous)
+                            .fill(Theme.Colors.glassFill)
+                            .overlay(
+                                Capsule(style: .continuous)
+                                    .stroke(
+                                        accent ? Theme.Colors.accentGold.opacity(0.45) : Theme.Colors.glassStroke.opacity(0.3),
+                                        lineWidth: 1
+                                    )
+                            )
+                    }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
     private func sectionBlock<Content: View>(title: String, @ViewBuilder content: @escaping () -> Content) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 14) {
             SectionHeaderView(title: title)
-            GlassCard(cornerRadius: Theme.Layout.cornerRadiusMedium, content: content)
-                .padding(16)
+            GlassCard(cornerRadius: Theme.Layout.cornerRadiusMedium) {
+                content()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(18)
+            }
         }
     }
 }
