@@ -13,10 +13,17 @@ xcuserdata/
 *.mode2v3
 *.perspectivev3
 
+# App secrets (copy Secrets.plist.example → Secrets.plist)
+LikeMinds/Resources/Secrets.plist
+LikeMinds/Resources/GoogleService-Info.plist
+LikeMinds/Config/GoogleOAuth.xcconfig
+
 # Swift Package Manager
 .build/
 .swiftpm/
 Package.resolved
+# Keep Xcode workspace lockfile for reproducible SPM resolves
+!LikeMinds/LikeMinds.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 
 # CocoaPods
 Pods/

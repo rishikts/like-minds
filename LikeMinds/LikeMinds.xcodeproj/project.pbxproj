@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 71;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,87 @@
 		A1000000000000000000000A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000A /* WelcomeView.swift */; };
 		A1000000000000000000000B /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000B /* WelcomeViewModel.swift */; };
 		A1000000000000000000000C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* Assets.xcassets */; };
+		A20000000000000000000D /* AuthProviderKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000D /* AuthProviderKind.swift */; };
+		A20000000000000000000E /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000E /* AuthUser.swift */; };
+		A20000000000000000000F /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000F /* UserSession.swift */; };
+		A200000000000000000010 /* SocialComfortLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000010 /* SocialComfortLevel.swift */; };
+		A200000000000000000011 /* InterestCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000011 /* InterestCatalog.swift */; };
+		A200000000000000000012 /* OnboardingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000012 /* OnboardingProfile.swift */; };
+		A200000000000000000013 /* OnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000013 /* OnboardingStep.swift */; };
+		A200000000000000000014 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000014 /* SessionStore.swift */; };
+		A200000000000000000015 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000015 /* AuthError.swift */; };
+		A200000000000000000016 /* AuthSigning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000016 /* AuthSigning.swift */; };
+		A200000000000000000017 /* AppleSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000017 /* AppleSignInService.swift */; };
+		A200000000000000000018 /* GoogleSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000018 /* GoogleSignInService.swift */; };
+		A200000000000000000019 /* GuestSignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000019 /* GuestSignInService.swift */; };
+		A20000000000000000001A /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001A /* AuthenticationService.swift */; };
+		A20000000000000000001B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001B /* AuthManager.swift */; };
+		A20000000000000000001C /* AuthProviderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001C /* AuthProviderButton.swift */; };
+		A20000000000000000001D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001D /* SecondaryButton.swift */; };
+		A20000000000000000001E /* OnboardingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001E /* OnboardingProgressBar.swift */; };
+		A20000000000000000001F /* SelectableChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000001F /* SelectableChip.swift */; };
+		A200000000000000000020 /* OnboardingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000020 /* OnboardingTextField.swift */; };
+		A200000000000000000021 /* OnboardingCardOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000021 /* OnboardingCardOption.swift */; };
+		A200000000000000000022 /* OnboardingMultilineField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000022 /* OnboardingMultilineField.swift */; };
+		A200000000000000000023 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000023 /* ErrorBanner.swift */; };
+		A200000000000000000024 /* OnboardingStepHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000024 /* OnboardingStepHeader.swift */; };
+		A200000000000000000025 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000025 /* AuthViewModel.swift */; };
+		A200000000000000000026 /* AuthSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000026 /* AuthSheetView.swift */; };
+		A200000000000000000027 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000027 /* OnboardingViewModel.swift */; };
+		A200000000000000000028 /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000028 /* OnboardingContainerView.swift */; };
+		A200000000000000000029 /* OnboardingStepContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000029 /* OnboardingStepContent.swift */; };
+		A20000000000000000002A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000002A /* HomeView.swift */; };
+		A20000000000000000002B /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000002B /* AppRootView.swift */; };
+		A200000000000000000030 /* GoogleOAuthScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000030 /* GoogleOAuthScopes.swift */; };
+		A200000000000000000031 /* GooglePeopleProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000031 /* GooglePeopleProfileService.swift */; };
+		A200000000000000000032 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000032 /* AppSecrets.swift */; };
+		A200000000000000000033 /* EmailTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000033 /* EmailTemplates.swift */; };
+		A200000000000000000034 /* EmailSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000034 /* EmailSending.swift */; };
+		A200000000000000000035 /* ResendEmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000035 /* ResendEmailService.swift */; };
+		A200000000000000000036 /* WelcomeEmailNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000036 /* WelcomeEmailNotifier.swift */; };
+		A200000000000000000037 /* GoogleSignInConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000037 /* GoogleSignInConfiguration.swift */; };
+		A2000000000000000000FF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = P200000000000000000002 /* GoogleSignIn */; };
+		A200000000000000000040 /* LMCommunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000040 /* LMCommunity.swift */; };
+		A200000000000000000041 /* LMMeetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000041 /* LMMeetup.swift */; };
+		A200000000000000000042 /* LMDiscoverPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000042 /* LMDiscoverPerson.swift */; };
+		A200000000000000000043 /* LMFeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000043 /* LMFeedModels.swift */; };
+		A200000000000000000044 /* LMNotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000044 /* LMNotificationItem.swift */; };
+		A200000000000000000045 /* LMUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000045 /* LMUserProfile.swift */; };
+		A200000000000000000046 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000046 /* MockData.swift */; };
+		A200000000000000000047 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000047 /* SectionHeaderView.swift */; };
+		A200000000000000000048 /* VibeTagRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000048 /* VibeTagRow.swift */; };
+		A200000000000000000049 /* CommunityCategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000049 /* CommunityCategoryCard.swift */; };
+		A20000000000000000004A /* MeetupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004A /* MeetupCard.swift */; };
+		A20000000000000000004B /* DiscoverPersonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004B /* DiscoverPersonCard.swift */; };
+		A20000000000000000004C /* FeedRecommendationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004C /* FeedRecommendationCard.swift */; };
+		A20000000000000000004D /* ActivityRowCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004D /* ActivityRowCard.swift */; };
+		A20000000000000000004E /* NotificationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004E /* NotificationRow.swift */; };
+		A20000000000000000004F /* ScreenShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000004F /* ScreenShell.swift */; };
+		A200000000000000000050 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000050 /* MainTab.swift */; };
+		A200000000000000000051 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000051 /* MainTabBar.swift */; };
+		A200000000000000000052 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000052 /* MainTabView.swift */; };
+		A200000000000000000053 /* HomeFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000053 /* HomeFeedViewModel.swift */; };
+		A200000000000000000054 /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000054 /* HomeFeedView.swift */; };
+		A200000000000000000056 /* CommunitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000056 /* CommunitiesViewModel.swift */; };
+		A200000000000000000057 /* CommunitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000057 /* CommunitiesView.swift */; };
+		A200000000000000000058 /* CommunityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000058 /* CommunityDetailViewModel.swift */; };
+		A200000000000000000059 /* CommunityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000059 /* CommunityDetailView.swift */; };
+		A20000000000000000005A /* MeetupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005A /* MeetupsViewModel.swift */; };
+		A20000000000000000005B /* MeetupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005B /* MeetupsView.swift */; };
+		A20000000000000000005C /* DiscoverPeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005C /* DiscoverPeopleViewModel.swift */; };
+		A20000000000000000005D /* DiscoverPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005D /* DiscoverPeopleView.swift */; };
+		A20000000000000000005E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005E /* ProfileViewModel.swift */; };
+		A20000000000000000005F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000005F /* ProfileView.swift */; };
+		A200000000000000000060 /* EditInterestsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000060 /* EditInterestsViewModel.swift */; };
+		A200000000000000000061 /* EditInterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000061 /* EditInterestsView.swift */; };
+		A200000000000000000062 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000062 /* NotificationsViewModel.swift */; };
+		A200000000000000000063 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000063 /* NotificationsView.swift */; };
+		A200000000000000000064 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000064 /* FlowLayout.swift */; };
+		A200000000000000000065 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000065 /* APIConfig.swift */; };
+		A200000000000000000066 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000066 /* APIClient.swift */; };
+		A200000000000000000067 /* UserProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000067 /* UserProfileDTO.swift */; };
+		A200000000000000000068 /* UserProfileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000068 /* UserProfileMapper.swift */; };
+		A200000000000000000069 /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000069 /* UserProfileService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +115,92 @@
 		B1000000000000000000000A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B1000000000000000000000B /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		B1000000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20000000000000000000D /* AuthProviderKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderKind.swift; sourceTree = "<group>"; };
+		B20000000000000000000E /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		B20000000000000000000F /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		B200000000000000000010 /* SocialComfortLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialComfortLevel.swift; sourceTree = "<group>"; };
+		B200000000000000000011 /* InterestCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCatalog.swift; sourceTree = "<group>"; };
+		B200000000000000000012 /* OnboardingProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProfile.swift; sourceTree = "<group>"; };
+		B200000000000000000013 /* OnboardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep.swift; sourceTree = "<group>"; };
+		B200000000000000000014 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		B200000000000000000015 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		B200000000000000000016 /* AuthSigning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSigning.swift; sourceTree = "<group>"; };
+		B200000000000000000017 /* AppleSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInService.swift; sourceTree = "<group>"; };
+		B200000000000000000018 /* GoogleSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInService.swift; sourceTree = "<group>"; };
+		B200000000000000000019 /* GuestSignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSignInService.swift; sourceTree = "<group>"; };
+		B20000000000000000001A /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		B20000000000000000001B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B20000000000000000001C /* AuthProviderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProviderButton.swift; sourceTree = "<group>"; };
+		B20000000000000000001D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		B20000000000000000001E /* OnboardingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProgressBar.swift; sourceTree = "<group>"; };
+		B20000000000000000001F /* SelectableChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChip.swift; sourceTree = "<group>"; };
+		B200000000000000000020 /* OnboardingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTextField.swift; sourceTree = "<group>"; };
+		B200000000000000000021 /* OnboardingCardOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardOption.swift; sourceTree = "<group>"; };
+		B200000000000000000022 /* OnboardingMultilineField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMultilineField.swift; sourceTree = "<group>"; };
+		B200000000000000000023 /* ErrorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
+		B200000000000000000024 /* OnboardingStepHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepHeader.swift; sourceTree = "<group>"; };
+		B200000000000000000025 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000026 /* AuthSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSheetView.swift; sourceTree = "<group>"; };
+		B200000000000000000027 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000028 /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		B200000000000000000029 /* OnboardingStepContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepContent.swift; sourceTree = "<group>"; };
+		B20000000000000000002A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B20000000000000000002B /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		B20000000000000000002C /* LikeMinds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LikeMinds.entitlements; sourceTree = "<group>"; };
+		B20000000000000000002D /* LikeMinds-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LikeMinds-Debug.entitlements"; sourceTree = "<group>"; };
+		B200000000000000000030 /* GoogleOAuthScopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuthScopes.swift; sourceTree = "<group>"; };
+		B200000000000000000031 /* GooglePeopleProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePeopleProfileService.swift; sourceTree = "<group>"; };
+		B200000000000000000032 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
+		B200000000000000000033 /* EmailTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTemplates.swift; sourceTree = "<group>"; };
+		B200000000000000000034 /* EmailSending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSending.swift; sourceTree = "<group>"; };
+		B200000000000000000035 /* ResendEmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResendEmailService.swift; sourceTree = "<group>"; };
+		B200000000000000000036 /* WelcomeEmailNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeEmailNotifier.swift; sourceTree = "<group>"; };
+		B200000000000000000037 /* GoogleSignInConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInConfiguration.swift; sourceTree = "<group>"; };
+		B200000000000000000038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		H200000000000000000001 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		H200000000000000000002 /* GoogleOAuth.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GoogleOAuth.xcconfig.example; sourceTree = "<group>"; };
 		C10000000000000000000001 /* LikeMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200000000000000000040 /* LMCommunity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMCommunity.swift; sourceTree = "<group>"; };
+		B200000000000000000041 /* LMMeetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMMeetup.swift; sourceTree = "<group>"; };
+		B200000000000000000042 /* LMDiscoverPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMDiscoverPerson.swift; sourceTree = "<group>"; };
+		B200000000000000000043 /* LMFeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMFeedModels.swift; sourceTree = "<group>"; };
+		B200000000000000000044 /* LMNotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMNotificationItem.swift; sourceTree = "<group>"; };
+		B200000000000000000045 /* LMUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMUserProfile.swift; sourceTree = "<group>"; };
+		B200000000000000000046 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B200000000000000000047 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		B200000000000000000048 /* VibeTagRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeTagRow.swift; sourceTree = "<group>"; };
+		B200000000000000000049 /* CommunityCategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCategoryCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004A /* MeetupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004B /* DiscoverPersonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPersonCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004C /* FeedRecommendationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRecommendationCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004D /* ActivityRowCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRowCard.swift; sourceTree = "<group>"; };
+		B20000000000000000004E /* NotificationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRow.swift; sourceTree = "<group>"; };
+		B20000000000000000004F /* ScreenShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShell.swift; sourceTree = "<group>"; };
+		B200000000000000000050 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		B200000000000000000051 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		B200000000000000000052 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B200000000000000000053 /* HomeFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000054 /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
+		B200000000000000000056 /* CommunitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000057 /* CommunitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitiesView.swift; sourceTree = "<group>"; };
+		B200000000000000000058 /* CommunityDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetailViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000059 /* CommunityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetailView.swift; sourceTree = "<group>"; };
+		B20000000000000000005A /* MeetupsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000005B /* MeetupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsView.swift; sourceTree = "<group>"; };
+		B20000000000000000005C /* DiscoverPeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000005D /* DiscoverPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleView.swift; sourceTree = "<group>"; };
+		B20000000000000000005E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B20000000000000000005F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B200000000000000000060 /* EditInterestsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInterestsViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000061 /* EditInterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInterestsView.swift; sourceTree = "<group>"; };
+		B200000000000000000062 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		B200000000000000000063 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		B200000000000000000064 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		B200000000000000000065 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B200000000000000000066 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B200000000000000000067 /* UserProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDTO.swift; sourceTree = "<group>"; };
+		B200000000000000000068 /* UserProfileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileMapper.swift; sourceTree = "<group>"; };
+		B200000000000000000069 /* UserProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2000000000000000000FF /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				E10000000000000000000009 /* App */,
+				E200000000000000000001 /* Core */,
+				H200000000000000000003 /* Config */,
 				E10000000000000000000006 /* Features */,
 				E1000000000000000000000A /* Shared */,
 				E10000000000000000000007 /* Resources */,
@@ -71,6 +240,15 @@
 			isa = PBXGroup;
 			children = (
 				E10000000000000000000008 /* Welcome */,
+				E200000000000000000021 /* Auth */,
+				E200000000000000000022 /* Onboarding */,
+				E200000000000000000070 /* Main */,
+				E200000000000000000024 /* Home */,
+				E200000000000000000071 /* Communities */,
+				E200000000000000000072 /* Meetups */,
+				E200000000000000000073 /* Discover */,
+				E200000000000000000074 /* Profile */,
+				E200000000000000000075 /* Notifications */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -79,8 +257,20 @@
 			isa = PBXGroup;
 			children = (
 				B1000000000000000000000C /* Assets.xcassets */,
+				B200000000000000000038 /* Info.plist */,
+				B20000000000000000002C /* LikeMinds.entitlements */,
+				B20000000000000000002D /* LikeMinds-Debug.entitlements */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		H200000000000000000003 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				H200000000000000000001 /* Config.xcconfig */,
+				H200000000000000000002 /* GoogleOAuth.xcconfig.example */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		E10000000000000000000008 /* Welcome */ = {
@@ -96,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				B10000000000000000000001 /* LikeMindsApp.swift */,
+				B20000000000000000002B /* AppRootView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -104,6 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				E1000000000000000000000B /* Theme */,
+				E200000000000000000076 /* Models */,
+				E200000000000000000077 /* MockData */,
 				E1000000000000000000000C /* Components */,
 			);
 			path = Shared;
@@ -127,8 +320,227 @@
 				B10000000000000000000007 /* GlassCard.swift */,
 				B10000000000000000000008 /* PrimaryButton.swift */,
 				B10000000000000000000009 /* ConnectionHub.swift */,
+				B20000000000000000001C /* AuthProviderButton.swift */,
+				B20000000000000000001D /* SecondaryButton.swift */,
+				B20000000000000000001E /* OnboardingProgressBar.swift */,
+				B20000000000000000001F /* SelectableChip.swift */,
+				B200000000000000000020 /* OnboardingTextField.swift */,
+				B200000000000000000021 /* OnboardingCardOption.swift */,
+				B200000000000000000022 /* OnboardingMultilineField.swift */,
+				B200000000000000000023 /* ErrorBanner.swift */,
+				B200000000000000000024 /* OnboardingStepHeader.swift */,
+				B200000000000000000064 /* FlowLayout.swift */,
+				E200000000000000000078 /* Feed */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E200000000000000000001 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E200000000000000000010 /* Models */,
+				E200000000000000000079 /* API */,
+				E200000000000000000011 /* Session */,
+				E200000000000000000012 /* Auth */,
+				E200000000000000000015 /* Email */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E200000000000000000079 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000065 /* APIConfig.swift */,
+				B200000000000000000066 /* APIClient.swift */,
+				B200000000000000000067 /* UserProfileDTO.swift */,
+				B200000000000000000068 /* UserProfileMapper.swift */,
+				B200000000000000000069 /* UserProfileService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E200000000000000000010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000D /* AuthProviderKind.swift */,
+				B20000000000000000000E /* AuthUser.swift */,
+				B20000000000000000000F /* UserSession.swift */,
+				B200000000000000000010 /* SocialComfortLevel.swift */,
+				B200000000000000000011 /* InterestCatalog.swift */,
+				B200000000000000000012 /* OnboardingProfile.swift */,
+				B200000000000000000013 /* OnboardingStep.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E200000000000000000011 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000014 /* SessionStore.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		E200000000000000000012 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000015 /* AuthError.swift */,
+				B200000000000000000016 /* AuthSigning.swift */,
+				B200000000000000000017 /* AppleSignInService.swift */,
+				B200000000000000000018 /* GoogleSignInService.swift */,
+				B200000000000000000019 /* GuestSignInService.swift */,
+				B20000000000000000001A /* AuthenticationService.swift */,
+				B20000000000000000001B /* AuthManager.swift */,
+				B200000000000000000030 /* GoogleOAuthScopes.swift */,
+				B200000000000000000031 /* GooglePeopleProfileService.swift */,
+				B200000000000000000037 /* GoogleSignInConfiguration.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E200000000000000000015 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000032 /* AppSecrets.swift */,
+				B200000000000000000033 /* EmailTemplates.swift */,
+				B200000000000000000034 /* EmailSending.swift */,
+				B200000000000000000035 /* ResendEmailService.swift */,
+				B200000000000000000036 /* WelcomeEmailNotifier.swift */,
+			);
+			path = Email;
+			sourceTree = "<group>";
+		};
+		E200000000000000000021 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000025 /* AuthViewModel.swift */,
+				B200000000000000000026 /* AuthSheetView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E200000000000000000022 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000027 /* OnboardingViewModel.swift */,
+				B200000000000000000028 /* OnboardingContainerView.swift */,
+				E200000000000000000023 /* Steps */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E200000000000000000023 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000029 /* OnboardingStepContent.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		E200000000000000000024 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000002A /* HomeView.swift */,
+				B200000000000000000053 /* HomeFeedViewModel.swift */,
+				B200000000000000000054 /* HomeFeedView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E200000000000000000070 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000050 /* MainTab.swift */,
+				B200000000000000000051 /* MainTabBar.swift */,
+				B200000000000000000052 /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E200000000000000000071 /* Communities */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000056 /* CommunitiesViewModel.swift */,
+				B200000000000000000057 /* CommunitiesView.swift */,
+				B200000000000000000058 /* CommunityDetailViewModel.swift */,
+				B200000000000000000059 /* CommunityDetailView.swift */,
+			);
+			path = Communities;
+			sourceTree = "<group>";
+		};
+		E200000000000000000072 /* Meetups */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000005A /* MeetupsViewModel.swift */,
+				B20000000000000000005B /* MeetupsView.swift */,
+			);
+			path = Meetups;
+			sourceTree = "<group>";
+		};
+		E200000000000000000073 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000005C /* DiscoverPeopleViewModel.swift */,
+				B20000000000000000005D /* DiscoverPeopleView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		E200000000000000000074 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000005E /* ProfileViewModel.swift */,
+				B20000000000000000005F /* ProfileView.swift */,
+				B200000000000000000060 /* EditInterestsViewModel.swift */,
+				B200000000000000000061 /* EditInterestsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E200000000000000000075 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000062 /* NotificationsViewModel.swift */,
+				B200000000000000000063 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		E200000000000000000076 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000040 /* LMCommunity.swift */,
+				B200000000000000000041 /* LMMeetup.swift */,
+				B200000000000000000042 /* LMDiscoverPerson.swift */,
+				B200000000000000000043 /* LMFeedModels.swift */,
+				B200000000000000000044 /* LMNotificationItem.swift */,
+				B200000000000000000045 /* LMUserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E200000000000000000077 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000046 /* MockData.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		E200000000000000000078 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000047 /* SectionHeaderView.swift */,
+				B200000000000000000048 /* VibeTagRow.swift */,
+				B200000000000000000049 /* CommunityCategoryCard.swift */,
+				B20000000000000000004A /* MeetupCard.swift */,
+				B20000000000000000004B /* DiscoverPersonCard.swift */,
+				B20000000000000000004C /* FeedRecommendationCard.swift */,
+				B20000000000000000004D /* ActivityRowCard.swift */,
+				B20000000000000000004E /* NotificationRow.swift */,
+				B20000000000000000004F /* ScreenShell.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +559,9 @@
 			dependencies = (
 			);
 			name = LikeMinds;
+			packageProductDependencies = (
+				P200000000000000000002 /* GoogleSignIn */,
+			);
 			productName = LikeMinds;
 			productReference = C10000000000000000000001 /* LikeMinds.app */;
 			productType = "com.apple.product-type.application";
@@ -159,7 +574,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					F10000000000000000000001 = {
 						CreatedOnToolsVersion = 16.0;
@@ -175,6 +590,9 @@
 				Base,
 			);
 			mainGroup = E10000000000000000000001;
+			packageReferences = (
+				P200000000000000000001 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = E10000000000000000000003 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10000000000000000000001 /* LikeMindsApp.swift in Sources */,
+				A20000000000000000002B /* AppRootView.swift in Sources */,
 				A10000000000000000000002 /* Colors.swift in Sources */,
 				A10000000000000000000003 /* Typography.swift in Sources */,
 				A10000000000000000000004 /* Layout.swift in Sources */,
@@ -209,8 +628,87 @@
 				A10000000000000000000007 /* GlassCard.swift in Sources */,
 				A10000000000000000000008 /* PrimaryButton.swift in Sources */,
 				A10000000000000000000009 /* ConnectionHub.swift in Sources */,
+				A20000000000000000001C /* AuthProviderButton.swift in Sources */,
+				A20000000000000000001D /* SecondaryButton.swift in Sources */,
+				A20000000000000000001E /* OnboardingProgressBar.swift in Sources */,
+				A20000000000000000001F /* SelectableChip.swift in Sources */,
+				A200000000000000000020 /* OnboardingTextField.swift in Sources */,
+				A200000000000000000021 /* OnboardingCardOption.swift in Sources */,
+				A200000000000000000022 /* OnboardingMultilineField.swift in Sources */,
+				A200000000000000000023 /* ErrorBanner.swift in Sources */,
+				A200000000000000000024 /* OnboardingStepHeader.swift in Sources */,
 				A1000000000000000000000A /* WelcomeView.swift in Sources */,
 				A1000000000000000000000B /* WelcomeViewModel.swift in Sources */,
+				A200000000000000000025 /* AuthViewModel.swift in Sources */,
+				A200000000000000000026 /* AuthSheetView.swift in Sources */,
+				A200000000000000000027 /* OnboardingViewModel.swift in Sources */,
+				A200000000000000000028 /* OnboardingContainerView.swift in Sources */,
+				A200000000000000000029 /* OnboardingStepContent.swift in Sources */,
+				A20000000000000000002A /* HomeView.swift in Sources */,
+				A20000000000000000000D /* AuthProviderKind.swift in Sources */,
+				A20000000000000000000E /* AuthUser.swift in Sources */,
+				A20000000000000000000F /* UserSession.swift in Sources */,
+				A200000000000000000010 /* SocialComfortLevel.swift in Sources */,
+				A200000000000000000011 /* InterestCatalog.swift in Sources */,
+				A200000000000000000012 /* OnboardingProfile.swift in Sources */,
+				A200000000000000000013 /* OnboardingStep.swift in Sources */,
+				A200000000000000000014 /* SessionStore.swift in Sources */,
+				A200000000000000000015 /* AuthError.swift in Sources */,
+				A200000000000000000016 /* AuthSigning.swift in Sources */,
+				A200000000000000000017 /* AppleSignInService.swift in Sources */,
+				A200000000000000000018 /* GoogleSignInService.swift in Sources */,
+				A200000000000000000019 /* GuestSignInService.swift in Sources */,
+				A20000000000000000001A /* AuthenticationService.swift in Sources */,
+				A20000000000000000001B /* AuthManager.swift in Sources */,
+				A200000000000000000030 /* GoogleOAuthScopes.swift in Sources */,
+				A200000000000000000031 /* GooglePeopleProfileService.swift in Sources */,
+				A200000000000000000037 /* GoogleSignInConfiguration.swift in Sources */,
+				A200000000000000000032 /* AppSecrets.swift in Sources */,
+				A200000000000000000033 /* EmailTemplates.swift in Sources */,
+				A200000000000000000034 /* EmailSending.swift in Sources */,
+				A200000000000000000035 /* ResendEmailService.swift in Sources */,
+				A200000000000000000036 /* WelcomeEmailNotifier.swift in Sources */,
+				A200000000000000000040 /* LMCommunity.swift in Sources */,
+				A200000000000000000041 /* LMMeetup.swift in Sources */,
+				A200000000000000000042 /* LMDiscoverPerson.swift in Sources */,
+				A200000000000000000043 /* LMFeedModels.swift in Sources */,
+				A200000000000000000044 /* LMNotificationItem.swift in Sources */,
+				A200000000000000000045 /* LMUserProfile.swift in Sources */,
+				A200000000000000000046 /* MockData.swift in Sources */,
+				A200000000000000000047 /* SectionHeaderView.swift in Sources */,
+				A200000000000000000048 /* VibeTagRow.swift in Sources */,
+				A200000000000000000049 /* CommunityCategoryCard.swift in Sources */,
+				A20000000000000000004A /* MeetupCard.swift in Sources */,
+				A20000000000000000004B /* DiscoverPersonCard.swift in Sources */,
+				A20000000000000000004C /* FeedRecommendationCard.swift in Sources */,
+				A20000000000000000004D /* ActivityRowCard.swift in Sources */,
+				A20000000000000000004E /* NotificationRow.swift in Sources */,
+				A20000000000000000004F /* ScreenShell.swift in Sources */,
+				A200000000000000000050 /* MainTab.swift in Sources */,
+				A200000000000000000051 /* MainTabBar.swift in Sources */,
+				A200000000000000000052 /* MainTabView.swift in Sources */,
+				A200000000000000000053 /* HomeFeedViewModel.swift in Sources */,
+				A200000000000000000054 /* HomeFeedView.swift in Sources */,
+				A200000000000000000056 /* CommunitiesViewModel.swift in Sources */,
+				A200000000000000000057 /* CommunitiesView.swift in Sources */,
+				A200000000000000000058 /* CommunityDetailViewModel.swift in Sources */,
+				A200000000000000000059 /* CommunityDetailView.swift in Sources */,
+				A20000000000000000005A /* MeetupsViewModel.swift in Sources */,
+				A20000000000000000005B /* MeetupsView.swift in Sources */,
+				A20000000000000000005C /* DiscoverPeopleViewModel.swift in Sources */,
+				A20000000000000000005D /* DiscoverPeopleView.swift in Sources */,
+				A20000000000000000005E /* ProfileViewModel.swift in Sources */,
+				A20000000000000000005F /* ProfileView.swift in Sources */,
+				A200000000000000000060 /* EditInterestsViewModel.swift in Sources */,
+				A200000000000000000061 /* EditInterestsView.swift in Sources */,
+				A200000000000000000062 /* NotificationsViewModel.swift in Sources */,
+				A200000000000000000063 /* NotificationsView.swift in Sources */,
+				A200000000000000000064 /* FlowLayout.swift in Sources */,
+				A200000000000000000065 /* APIConfig.swift in Sources */,
+				A200000000000000000066 /* APIClient.swift in Sources */,
+				A200000000000000000067 /* UserProfileDTO.swift in Sources */,
+				A200000000000000000068 /* UserProfileMapper.swift in Sources */,
+				A200000000000000000069 /* UserProfileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,25 +717,54 @@
 /* Begin XCBuildConfiguration section */
 		G10000000000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = H200000000000000000001 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BMFYMMAVQW;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -245,18 +772,47 @@
 		};
 		G10000000000000000000002 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = H200000000000000000001 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BMFYMMAVQW;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -267,11 +823,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Resources/LikeMinds-Debug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LikeMinds;
+				INFOPLIST_KEY_EMAIL_FROM_ADDRESS = "noreply@liveminds.com";
+				INFOPLIST_KEY_EMAIL_FROM_NAME = "Like Minds";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo so friends can recognize you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -280,7 +842,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.likeminds.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikts.likeminds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -295,11 +857,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Resources/LikeMinds.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LikeMinds;
+				INFOPLIST_KEY_EMAIL_FROM_ADDRESS = "noreply@liveminds.com";
+				INFOPLIST_KEY_EMAIL_FROM_NAME = "Like Minds";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Choose a profile photo so friends can recognize you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -308,7 +876,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.likeminds.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rishikts.likeminds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -340,6 +908,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		P200000000000000000001 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		P200000000000000000002 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = P200000000000000000001 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F10000000000000000000005 /* Project object */;
 }

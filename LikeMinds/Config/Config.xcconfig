@@ -1,0 +1,2 @@
+// Optional local OAuth credentials (see GoogleOAuth.xcconfig.example).
+#include? "GoogleOAuth.xcconfig"
