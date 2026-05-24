@@ -23,15 +23,18 @@ final class AuthManager: ObservableObject {
     private let authenticationService: AuthenticationServiceProtocol
     private let sessionStore: SessionStoring
     private let welcomeEmailNotifier: WelcomeEmailNotifying
+    private let userProfileService: UserProfileServing
 
     init(
         authenticationService: AuthenticationServiceProtocol = AuthenticationService(),
         sessionStore: SessionStoring = SessionStore(),
-        welcomeEmailNotifier: WelcomeEmailNotifying = WelcomeEmailNotifier()
+        welcomeEmailNotifier: WelcomeEmailNotifying = WelcomeEmailNotifier(),
+        userProfileService: UserProfileServing = UserProfileService()
     ) {
         self.authenticationService = authenticationService
         self.sessionStore = sessionStore
         self.welcomeEmailNotifier = welcomeEmailNotifier
+        self.userProfileService = userProfileService
     }
 
     func bootstrap() {
@@ -102,6 +105,7 @@ final class AuthManager: ObservableObject {
         current.lastActiveAt = .now
         session = current
         try? sessionStore.save(current)
+        Task { await syncProfileToBackend(profile: profile, isOnboarded: false) }
     }
 
     func completeOnboarding(with profile: OnboardingProfile) {
@@ -112,6 +116,23 @@ final class AuthManager: ObservableObject {
         session = current
         try? sessionStore.save(current)
         route = .home
+        Task { await syncProfileToBackend(profile: profile, isOnboarded: true) }
+    }
+
+    private func syncProfileToBackend(profile: OnboardingProfile, isOnboarded: Bool) async {
+        guard let current = session else { return }
+        do {
+            _ = try await userProfileService.syncProfile(
+                authUser: current.user,
+                profile: profile,
+                isOnboarded: isOnboarded
+            )
+        } catch {
+            // Offline or backend not configured — local session remains source of truth.
+            #if DEBUG
+            print("[LikeMinds] Profile sync skipped/failed: \(error.localizedDescription)")
+            #endif
+        }
     }
 
     func signOut() {

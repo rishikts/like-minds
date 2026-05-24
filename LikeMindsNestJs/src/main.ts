@@ -1,7 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import * as cors from 'cors';
 import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
@@ -15,8 +14,10 @@ async function bootstrap() {
   const nodeEnv = configService.get<string>('NODE_ENV', 'development');
   const corsOrigin = configService.get<string>('CORS_ORIGIN', 'http://localhost:3000');
 
-  // Middleware
-  app.use(cors({ origin: corsOrigin.split(','), credentials: true }));
+  app.enableCors({
+    origin: corsOrigin.split(',').map((o) => o.trim()),
+    credentials: true,
+  });
 
   // Global validation pipe
   app.useGlobalPipes(

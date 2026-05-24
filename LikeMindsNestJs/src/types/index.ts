@@ -58,18 +58,30 @@ export interface SupabaseUser {
 
 export interface UserProfile {
   id: string;
-  supabaseId: string;
+  supabaseId: string | null;
+  externalAuthId: string | null;
   email: string;
-  firstName?: string;
-  lastName?: string;
-  username?: string;
-  profileImageUrl?: string;
-  bio?: string;
-  location?: string;
-  isVerified: boolean;
+  fullName: string | null;
+  username: string | null;
+  phone: string | null;
+  bio: string | null;
+  dateOfBirth: string | null;
+  gender: string | null;
+  city: string | null;
+  occupationStatus: string | null;
+  personalityTypes: string[];
+  socialComfort: string | null;
+  selectedInterestIds: string[];
+  hobbiesNarrative: string | null;
+  authProvider: string | null;
+  profileImageUrl: string | null;
+  meetupsAttended: number;
+  meetupsHosted: number;
+  badges: string[];
+  favoriteCommunities: string[];
   isOnboarded: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface UserWithInterests extends UserProfile {

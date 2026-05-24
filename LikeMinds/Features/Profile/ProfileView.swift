@@ -28,7 +28,7 @@ struct ProfileView: View {
                 EditInterestsView(profile: viewModel.profile)
             }
         }
-        .onAppear { viewModel.load() }
+        .onAppear { viewModel.load(session: authManager.session) }
     }
 
     private var header: some View {

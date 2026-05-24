@@ -22,13 +22,18 @@ export class JwtAuthGuard implements CanActivate {
 
     try {
       const secret = this.configService.get<string>('SUPABASE_JWT_SECRET');
+      if (!secret) {
+        throw new UnauthorizedException('SUPABASE_JWT_SECRET is not configured');
+      }
+
       const payload = jwt.verify(token, secret, {
         algorithms: ['HS256'],
-      }) as JwtPayload;
+      }) as jwt.JwtPayload & { email?: string };
 
+      const email = payload.email ?? '';
       request.user = {
-        supabaseId: payload.sub,
-        email: payload.email,
+        supabaseId: String(payload.sub),
+        email,
       };
 
       return true;

@@ -95,6 +95,11 @@
 		A200000000000000000062 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000062 /* NotificationsViewModel.swift */; };
 		A200000000000000000063 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000063 /* NotificationsView.swift */; };
 		A200000000000000000064 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000064 /* FlowLayout.swift */; };
+		A200000000000000000065 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000065 /* APIConfig.swift */; };
+		A200000000000000000066 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000066 /* APIClient.swift */; };
+		A200000000000000000067 /* UserProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000067 /* UserProfileDTO.swift */; };
+		A200000000000000000068 /* UserProfileMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000068 /* UserProfileMapper.swift */; };
+		A200000000000000000069 /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B200000000000000000069 /* UserProfileService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,6 +196,11 @@
 		B200000000000000000062 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		B200000000000000000063 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		B200000000000000000064 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		B200000000000000000065 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B200000000000000000066 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B200000000000000000067 /* UserProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDTO.swift; sourceTree = "<group>"; };
+		B200000000000000000068 /* UserProfileMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileMapper.swift; sourceTree = "<group>"; };
+		B200000000000000000069 /* UserProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,11 +339,24 @@
 			isa = PBXGroup;
 			children = (
 				E200000000000000000010 /* Models */,
+				E200000000000000000079 /* API */,
 				E200000000000000000011 /* Session */,
 				E200000000000000000012 /* Auth */,
 				E200000000000000000015 /* Email */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		E200000000000000000079 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B200000000000000000065 /* APIConfig.swift */,
+				B200000000000000000066 /* APIClient.swift */,
+				B200000000000000000067 /* UserProfileDTO.swift */,
+				B200000000000000000068 /* UserProfileMapper.swift */,
+				B200000000000000000069 /* UserProfileService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		E200000000000000000010 /* Models */ = {
@@ -681,6 +704,11 @@
 				A200000000000000000062 /* NotificationsViewModel.swift in Sources */,
 				A200000000000000000063 /* NotificationsView.swift in Sources */,
 				A200000000000000000064 /* FlowLayout.swift in Sources */,
+				A200000000000000000065 /* APIConfig.swift in Sources */,
+				A200000000000000000066 /* APIClient.swift in Sources */,
+				A200000000000000000067 /* UserProfileDTO.swift in Sources */,
+				A200000000000000000068 /* UserProfileMapper.swift in Sources */,
+				A200000000000000000069 /* UserProfileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
