@@ -1,0 +1,329 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  // multiSchema lets Prisma read `profiles.id -> auth.users.id` FKs.
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  // Pooled connection (PgBouncer) — used at runtime by the app
+  url       = env("DATABASE_URL")
+  // Direct connection — required by `prisma migrate` and `prisma db pull`
+  directUrl = env("DIRECT_URL")
+  // Tables in `auth` are owned by Supabase; we only read from them.
+  schemas   = ["public", "auth"]
+}
+
+// ============================================
+// AUTH & USERS
+// ============================================
+
+model User {
+  id                    String      @id @default(uuid())
+  /// Supabase Auth `sub` — set when the client signs in with Supabase JWT.
+  supabaseId            String?     @unique @db.VarChar(255)
+  /// Apple / Google / guest id from the iOS app until Supabase Auth is wired.
+  externalAuthId        String?     @unique @db.VarChar(255)
+  email                 String      @unique @db.VarChar(255)
+  firstName             String?     @db.VarChar(100)
+  lastName              String?     @db.VarChar(100)
+  fullName              String?     @db.VarChar(150)
+  username              String?     @unique @db.VarChar(100)
+  profileImageUrl       String?     @db.Text
+  bio                   String?     @db.VarChar(500)
+  dateOfBirth           DateTime?   @db.Date
+  gender                String?     @db.VarChar(50)
+  phone                 String?     @db.VarChar(20)
+  /// City from onboarding (iOS `city`)
+  location              String?     @db.VarChar(255)
+  occupationStatus      String?     @db.VarChar(100)
+  /// Vibe tags: Adventurer, Thinker, Connector, etc.
+  personalityTypes      String[]    @default([])
+  /// introvert | balanced | extrovert
+  socialComfort         String?     @db.VarChar(50)
+  hobbiesNarrative      String?     @db.VarChar(300)
+  /// Interest slugs from InterestCatalog (e.g. trekking, cricket)
+  selectedInterestIds   String[]    @default([])
+  /// apple | google | guest
+  authProvider          String?     @db.VarChar(20)
+  meetupsAttended       Int         @default(0)
+  meetupsHosted         Int         @default(0)
+  badges                String[]    @default([])
+  favoriteCommunities   String[]    @default([])
+  isVerified            Boolean     @default(false)
+  isOnboarded           Boolean     @default(false)
+  role                  UserRole    @default(USER)
+  status                UserStatus  @default(ACTIVE)
+  lastLoginAt           DateTime?
+  lastActivityAt        DateTime?
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+
+  // Relations
+  interests             UserInterest[]
+  communityMemberships  CommunityMember[]
+  meetupRSVPs           MeetupRSVP[]
+  notifications         Notification[]
+  createdCommunities    Community[] @relation("CommunityCreator")
+  createdMeetups        Meetup[] @relation("MeetupCreator")
+  receivedFollows       UserFollow[] @relation("FollowTarget")
+  sentFollows           UserFollow[] @relation("FollowInitiator")
+
+  @@index([email])
+  @@index([supabaseId])
+  @@index([externalAuthId])
+  @@index([username])
+  @@index([createdAt])
+}
+
+model UserFollow {
+  id              String    @id @default(uuid())
+  initiatorId     String
+  targetId        String
+  status          FollowStatus @default(PENDING)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  initiator       User      @relation("FollowInitiator", fields: [initiatorId], references: [id], onDelete: Cascade)
+  target          User      @relation("FollowTarget", fields: [targetId], references: [id], onDelete: Cascade)
+
+  @@unique([initiatorId, targetId])
+  @@index([targetId])
+}
+
+// ============================================
+// INTERESTS
+// ============================================
+
+model Interest {
+  id                String    @id @default(uuid())
+  name              String    @unique @db.VarChar(100)
+  slug              String    @unique @db.VarChar(100)
+  description       String?   @db.Text
+  icon              String?   @db.VarChar(255)
+  category          String?   @db.VarChar(100)
+  isActive          Boolean   @default(true)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // Relations
+  userInterests     UserInterest[]
+  communities       Community[]
+
+  @@index([slug])
+  @@index([category])
+}
+
+model UserInterest {
+  id              String    @id @default(uuid())
+  userId          String
+  interestId      String
+  proficiencyLevel String?   @db.VarChar(50) // beginner, intermediate, expert
+  createdAt       DateTime  @default(now())
+
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  interest        Interest  @relation(fields: [interestId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, interestId])
+  @@index([userId])
+  @@index([interestId])
+}
+
+// ============================================
+// COMMUNITIES
+// ============================================
+
+model Community {
+  id                String    @id @default(uuid())
+  name              String    @db.VarChar(255)
+  slug              String    @unique @db.VarChar(255)
+  description       String?   @db.Text
+  imageUrl          String?   @db.Text
+  bannerImageUrl    String?   @db.Text
+  interestId        String
+  creatorId         String
+  visibility        CommunityVisibility @default(PUBLIC)
+  status            CommunityStatus @default(ACTIVE)
+  memberCount       Int       @default(0)
+  rules             String?   @db.Text
+  joinApprovalRequired Boolean @default(false)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // Relations
+  interest          Interest  @relation(fields: [interestId], references: [id], onDelete: Restrict)
+  creator           User      @relation("CommunityCreator", fields: [creatorId], references: [id], onDelete: Cascade)
+  members           CommunityMember[]
+  meetups           Meetup[]
+
+  @@index([slug])
+  @@index([interestId])
+  @@index([creatorId])
+  @@index([createdAt])
+}
+
+model CommunityMember {
+  id              String    @id @default(uuid())
+  communityId     String
+  userId          String
+  role            MemberRole @default(MEMBER)
+  joinedAt        DateTime  @default(now())
+  status          MemberStatus @default(ACTIVE)
+
+  community       Community @relation(fields: [communityId], references: [id], onDelete: Cascade)
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([communityId, userId])
+  @@index([communityId])
+  @@index([userId])
+}
+
+// ============================================
+// MEETUPS
+// ============================================
+
+model Meetup {
+  id                String    @id @default(uuid())
+  title             String    @db.VarChar(255)
+  description       String?   @db.Text
+  communityId       String
+  creatorId         String
+  location          String    @db.Text
+  latitude          Float?
+  longitude         Float?
+  startTime         DateTime
+  endTime           DateTime
+  maxAttendees      Int?
+  imageUrl          String?   @db.Text
+  status            MeetupStatus @default(SCHEDULED)
+  rsvpCount         Int       @default(0)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // Relations
+  community         Community @relation(fields: [communityId], references: [id], onDelete: Cascade)
+  creator           User      @relation("MeetupCreator", fields: [creatorId], references: [id], onDelete: Cascade)
+  rsvps             MeetupRSVP[]
+
+  @@index([communityId])
+  @@index([creatorId])
+  @@index([startTime])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model MeetupRSVP {
+  id              String    @id @default(uuid())
+  meetupId        String
+  userId          String
+  status          RSVPStatus @default(GOING)
+  rsvpedAt        DateTime  @default(now())
+  checkedInAt     DateTime?
+  notes           String?   @db.Text
+
+  meetup          Meetup    @relation(fields: [meetupId], references: [id], onDelete: Cascade)
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([meetupId, userId])
+  @@index([meetupId])
+  @@index([userId])
+  @@index([status])
+}
+
+// ============================================
+// NOTIFICATIONS
+// ============================================
+
+model Notification {
+  id              String    @id @default(uuid())
+  userId          String
+  type            NotificationType
+  title           String    @db.VarChar(255)
+  message         String    @db.Text
+  relatedEntityId String?   @db.VarChar(255) // could be meetupId, userId, communityId, etc
+  isRead          Boolean   @default(false)
+  readAt          DateTime?
+  createdAt       DateTime  @default(now())
+
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([isRead])
+  @@index([createdAt])
+}
+
+// ============================================
+// ENUMS
+// ============================================
+
+enum UserRole {
+  ADMIN
+  MODERATOR
+  USER
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  BANNED
+  SUSPENDED
+}
+
+enum CommunityVisibility {
+  PUBLIC
+  PRIVATE
+  UNLISTED
+}
+
+enum CommunityStatus {
+  ACTIVE
+  ARCHIVED
+  DELETED
+}
+
+enum MemberRole {
+  ADMIN
+  MODERATOR
+  MEMBER
+}
+
+enum MemberStatus {
+  ACTIVE
+  INACTIVE
+  BANNED
+}
+
+enum FollowStatus {
+  PENDING
+  ACCEPTED
+  BLOCKED
+}
+
+enum MeetupStatus {
+  SCHEDULED
+  ONGOING
+  COMPLETED
+  CANCELLED
+}
+
+enum RSVPStatus {
+  GOING
+  MAYBE
+  NOT_GOING
+  CANCELLED
+}
+
+enum NotificationType {
+  FOLLOW_REQUEST
+  FOLLOW_ACCEPTED
+  COMMUNITY_INVITE
+  MEETUP_INVITE
+  MEETUP_REMINDER
+  MEETUP_UPDATED
+  MEMBER_JOINED_COMMUNITY
+  NEW_MEETUP
+  COMMUNITY_ANNOUNCEMENT
+}
