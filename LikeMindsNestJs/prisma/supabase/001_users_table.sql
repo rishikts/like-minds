@@ -1,4 +1,9 @@
 -- =============================================================================
+-- DEPRECATED — kept for reference.
+-- Use 002_profiles_and_interests.sql instead for new Supabase projects.
+-- This file uses the old PascalCase "User" shape (Prisma-driven, no auth.users
+-- linkage). Do NOT run alongside 002_*.sql; pick one.
+-- =============================================================================
 -- Like Minds — Supabase PostgreSQL: single `User` profile table
 -- Run in Supabase Dashboard → SQL Editor (or use Prisma migrate against DATABASE_URL)
 -- =============================================================================
